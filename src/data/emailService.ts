@@ -4,7 +4,7 @@ const API_BASE_URL = import.meta.env.PUBLIC_API_BASE_URL;
 
 export const sendWelcomeEmail = async (
     email: string,
-    username: string    
+    username: string
 ): Promise<string> => {
     try {
         const response = await axios.post(
