@@ -5,9 +5,9 @@ import RegistrationSelector from './RegistrationSelector';
 export default function RegistrationForm() {
   // Array de fechas disponibles - fácil de editar desde aquí
   const AVAILABLE_DATES = [
-    { id: '2', date: '15 de marzo de 2025', location: 'Bucaramanga', value: '2025-03-15' },
-    { id: '3', date: '22 de marzo de 2025', location: 'Bucaramanga', value: '2025-03-22' },
-    { id: '4', date: '29 de marzo de 2025', location: 'Bucaramanga', value: '2025-03-29' }
+    { id: '2', date: 'Agenda Tu Fecha', location: 'Campuslands', value: '2025-08-15' },
+    // { id: '3', date: '22 de marzo de 2025', location: 'Bucaramanga', value: '2025-03-22' },
+    // { id: '4', date: '29 de marzo de 2025', location: 'Bucaramanga', value: '2025-03-29' }
   ];
 
   const [formType, setFormType] = useState<'individual' | 'multiple'>('individual');
@@ -27,10 +27,10 @@ export default function RegistrationForm() {
   const [success, setSuccess] = useState(false);
 
   // Precios
-  const INDIVIDUAL_PRICE = 97000;
-  const BULK_DISCOUNT_PRICE = 75000;
-  const BULK_DISCOUNT_THRESHOLD = 40;
-  const MAX_SEATS = 1000;
+  const INDIVIDUAL_PRICE = 150000;
+  const BULK_DISCOUNT_PRICE = 120000; // Precio por persona al comprar más de 40 cupos
+  const BULK_DISCOUNT_THRESHOLD = 30;
+  const MAX_SEATS = 500;
   const MIN_MULTIPLE_SEATS = 2;
 
   const resetForm = () => {

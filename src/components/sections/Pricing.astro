@@ -1,28 +1,16 @@
 ---
-import Card from '../ui/Card.astro';
-import Button from '../ui/Button.astro';
+import Card from "../ui/Card.astro";
+import Button from "../ui/Button.astro";
 
 const benefits = [
- {
-   highlight: true,
-   text: "Certificado de Participación"
- },
- {
-   highlight: true,
-   text: "Ahorro de Tiempo y Esfuerzo"
- },
- {
-   text: "4 horas de formación intensiva"
- },
- {
-   text: "Acceso a Herramientas Prácticas:"
- },
- {
-   text: "Ejemplos Reales y Aplicados"
- },
- {
-   text: "Comunidad privada de alumnos"
- }
+  {
+    highlight: true,
+    text: "Manual de buenas prácticas + plantillas personalizadas",
+  },
+  { highlight: true, text: "Certificado de participación" },
+  { text: "Sesión intensiva de 4 horas (90 min + 150 min)" },
+  { text: "Presencial o virtual en vivo" },
+  { text: "Ideal para equipos de trabajo (5–15 personas)" },
 ];
 ---
 
@@ -30,35 +18,54 @@ const benefits = [
   <div class="container mx-auto px-4">
     <Card class="max-w-3xl mx-auto">
       <div class="text-center p-4 sm:p-8">
-        <span class="inline-block bg-purple-500/20 text-purple-300 rounded-full px-4 py-1.5 text-sm font-medium mb-8">
-          Oferta de Lanzamiento • 50% Descuento
+        <span
+          class="inline-block bg-purple-500/20 text-purple-300 rounded-full px-4 py-1.5 text-sm font-medium mb-8"
+        >
+          Oferta de Lanzamiento • 20% Descuento
         </span>
-        
-        <div class="flex flex-col sm:flex-row justify-center items-center sm:items-baseline gap-2 sm:gap-4 mb-8">
-          <span class="text-4xl sm:text-6xl font-bold order-2 sm:order-1">$97.000</span>
-          <span class="text-lg sm:text-xl text-white/40 line-through order-1 sm:order-2">
-           $194.000
+
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center sm:items-baseline gap-2 sm:gap-4 mb-8"
+        >
+          <span class="text-4xl sm:text-6xl font-bold order-2 sm:order-1"
+            >$150.000</span
+          >
+          <span
+            class="text-lg sm:text-xl text-white/40 line-through order-1 sm:order-2"
+          >
+            $194.000
           </span>
         </div>
-  
+
         <div class="space-y-4 mb-8 text-left">
-          {benefits.map(benefit => (
-            <div class="flex items-start gap-2">
-              <svg 
-                class={`w-5 h-5 mt-0.5 flex-shrink-0 ${benefit.highlight ? 'text-purple-400' : 'text-purple-300/70'}`} 
-                viewBox="0 0 20 20" 
-                fill="currentColor"
-              >
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-              </svg>
-              <span class={`${benefit.highlight ? 'text-white font-medium' : 'text-white/80'}`}>
-                {benefit.text}
-              </span>
-            </div>
-          ))}
+          {
+            benefits.map((benefit) => (
+              <div class="flex items-start gap-2">
+                <svg
+                  class={`w-5 h-5 mt-0.5 flex-shrink-0 ${benefit.highlight ? "text-purple-400" : "text-purple-300/70"}`}
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span
+                  class={`${benefit.highlight ? "text-white font-medium" : "text-white/80"}`}
+                >
+                  {benefit.text}
+                </span>
+              </div>
+            ))
+          }
         </div>
         <a href="#registro">
-          <Button variant="primary" class="w-full bg-purple-600 hover:bg-purple-700 transition-colors">
+          <Button
+            variant="primary"
+            class="w-full bg-purple-600 hover:bg-purple-700 transition-colors"
+          >
             Reserva tu cupo ahora
           </Button>
         </a>
@@ -68,4 +75,4 @@ const benefits = [
       </div>
     </Card>
   </div>
-  </section>
+</section>

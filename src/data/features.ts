@@ -1,33 +1,32 @@
-
 export const features = [
-    {
-      title: "Introducción a la Inteligencia Artificial",
-      description: "Descubre qué es la IA y cómo puedes usarla en tareas diarias sin conocimientos técnicos.",
-      weeks: "Módulo 1 "
-    },
-    {
-      title: "Automatización de Documentos",
-      description: "Aprende a generar reportes, cartas y correos electrónicos con herramientas que redactan por ti, ¡solo necesitas dar una idea inicial!",
-      weeks: "Módulo 2 "
-    },
-    {
-      title: "Gestión Inteligente de Agendas y Tareas",
-      description: "Descubre cómo asistentes virtuales pueden ayudarte a organizar citas, recordar pendientes y planificar tu día de forma eficiente.",
-      weeks: "Módulo 3 "
-    },
-    {
-      title: "Creación de Resúmenes Rápidos",
-      description: "Convierte largos textos en resúmenes claros y precisos en cuestión de segundos con la ayuda de la IA.",
-      weeks: "Módulo 4 "
-    },
-    {
-      title: "Generación de Ideas y Soluciones",
-      description: "Encuentra inspiración o soluciones rápidas para problemas laborales cotidianos, desde redactar un memo hasta planificar una reunión.",
-      weeks: "Módulo 5 "
-    },
-    {
-      title: "Optimización de Trabajo Administrativo",
-      description: "Usa herramientas de IA para completar hojas de cálculo, analizar datos simples o crear presentaciones con menos esfuerzo.",
-      weeks: "Módulo 6 "
-    }
-  ];
+  {
+    title: "El Despertar Digital (90 min)",
+    description: "Mentalidad y estrategia para adopción de IA: evolución exponencial, casos de transformación, framework AI Radar y cálculo de ROI con ejercicio práctico aplicado a tu empresa.",
+    weeks: "Bloque 1"
+  },
+  {
+    title: "Dominio de una Herramienta (150 min)",
+    description: "Configuración segura, mejores prácticas y técnicas avanzadas sobre casos reales del sector. Trabajo individual y grupal con plantillas listas para implementar.",
+    weeks: "Bloque 2"
+  },
+  {
+    title: "Herramientas Disponibles",
+    description: "ChatGPT, Microsoft Copilot, Google AI Studio, HeyGen, ElevenLabs, MidJourney, Gamma/Plus AI, Trello. Seleccionamos 1 según tus objetivos.",
+    weeks: "Stack"
+  },
+  {
+    title: "Incluye",
+    description: "Manual de buenas prácticas, plantillas personalizadas y materiales descargables para implementación inmediata.",
+    weeks: "Entrega"
+  },
+  {
+    title: "Modalidad",
+    description: "Presencial u online en vivo. Sesión para 5–15 miembros o equipo directivo.",
+    weeks: "Formato"
+  },
+  {
+    title: "Ideal para",
+    description: "Equipos que necesitan una introducción sólida y aplicable para validar interés y generar quick wins.",
+    weeks: "Perfil"
+  }
+];

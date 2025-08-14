@@ -1,93 +1,46 @@
 ---
-import CountdownTimer from '../ui/CountdownTimer';
 import { Image } from 'astro:assets';
 import logo from '../../assets/logo.png';
-
-const whatsappText = encodeURIComponent(`¡Hola! Me interesa el curso en IA Generativa. Quiero más información sobre el proceso de inscripción y pago.
-
-Mi consulta es sobre:
-- Precio de lanzamiento: $97.000 
-- Duración: 4 horas
-- Modalidad presencial
--(completa tu resgistro usando tu cedula)
-
-¿Me podrías indicar los pasos para inscribirme?`);
-
-const whatsappLink = `https://wa.me/573012463004?text=${whatsappText}`;
 ---
 
-<header class="fixed w-full z-50 bg-[#1a1f3c]/20 backdrop-blur-md border-b border-purple-500/10">
- <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-  <a href="/" class="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
-    <Image 
-      src="https://camper-stories.s3.us-east-2.amazonaws.com/assets/campuslands.png"
-      alt="Hero Image" 
-      class="mx-auto h-auto pt-1"
-      width={160}
-      height={160}
-    />
-  </a>
-  
-   <a href="#registro" class="px-6 py-2 bg-purple-500/10 border border-purple-400/30 rounded-full text-purple-400 hover:bg-purple-400/20 transition-all">
-     Inscríbete Ahora
-   </a>
- </div>
-</header>
+<section class="pt-28 pb-16 bg-gradient-to-b from-[#191e3b] to-[#151933] text-white">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col items-center text-center">
+      <Image src={logo} alt="IA Academy" width={120} height={120} class="mb-6 opacity-90" />
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Masterclass de <span class="text-purple-400">4 horas</span> en IA para Equipos 
+      </h1>
+      <p class="text-lg md:text-xl text-white/80 mt-4">
+        Sesión intensiva enfocada en resultados:
+        <strong> El Despertar Digital (90 min) </strong>
+        +
+        <strong> dominio práctico de una herramienta (150 min) </strong>.
+        Presencial o virtual.
+      </p>
 
-<section class="relative min-h-screen flex items-center pt-28 bg-gradient-to-b from-[#151933] to-[#151933]">
- <div class="container mx-auto px-4 relative z-10">
-    <Image 
-      src={logo}
-      alt="Hero Image" 
-      class="mx-auto h-auto"
-      width={160}
-      height={160}
-    />
-   <div class="text-center">
-     <span class="inline-block mb-8">
-       <span class="rounded-full px-4 py-1.5 text-sm font-medium text-purple-300">
-         Edición Limitada • 60 cupos
-       </span>
-     </span>
-     <h1 class="text-4xl md:text-7xl font-bold mb-8 text-white">
-       Domina la IA Generativa<br />
-       y Mejora Tu Productividad
-     </h1>
-     <p class="text-xl text-white/60 max-w-2xl mx-auto mb-12">
-       4 horas intensivas para convertirte en experto en Inteligencia Artificial. 
-       De cero a experto con aplicaciones reales y prácticas.
-     </p>
-     <CountdownTimer client:load />
-     <div class="flex flex-col sm:flex-row gap-4 justify-center mt-12 mb-16">
-       <a href="#registro"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="text-white px-8 py-4 rounded-lg font-medium transition-all min-w-10 transform hover:scale-105 bg-purple-600 hover:bg-purple-700"
-       >
-         Reserva tu cupo • $97.000
-       </a>
-       <a href="#registro"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="text-white px-8 py-4 rounded-lg font-medium transition-all min-w-10 transform hover:scale-105 bg-purple-600 hover:bg-purple-700"
-       >
-         Reservas Multiples • Empresas
-       </a>
-     </div>
-     <div class="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-       <div class="rounded-lg p-4">
-         <div class="text-2xl font-bold text-purple-400">90%</div>
-         <div class="text-sm text-white/60">Tasa de finalización</div>
-       </div>
-       <div class="rounded-lg p-4">
-         <div class="text-2xl font-bold text-purple-400">15+</div>
-         <div class="text-sm text-white/60">Usos de IA Generativa</div>
-       </div>
-       <div class="rounded-lg p-4">
-         <div class="text-2xl font-bold text-purple-400">24/7</div>
-         <div class="text-sm text-white/60">Acceso a la comunidad</div>
-       </div>
-     </div>
-   </div>
- </div>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <a
+          href="#registro"
+          class="text-white px-8 py-4 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl bg-purple-600 hover:bg-purple-700"
+        >
+          Inscribirme
+        </a>
+
+        <!-- Reemplaza 573005555555 por tu número -->
+        <a
+          href="https://wa.me/573005555555?text=Hola%20estoy%20interesado(a)%20en%20la%20Masterclass%20de%204h%20para%20mi%20equipo"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white px-8 py-4 rounded-lg font-medium transition-all shadow-lg hover:shadow-xl bg-white/10 hover:bg-white/20 border border-white/20"
+        >
+          Hablar por WhatsApp
+        </a>
+      </div>
+
+      <p class="mt-6 text-sm text-white/60">
+        <strong>Próximamente:</strong> más modalidades (8h, maestría, cursos pregrabados).
+        Por ahora puedes inscribir a tu equipo a la <strong>Masterclass de 4 horas</strong>.
+      </p>
+    </div>
+  </div>
 </section>
